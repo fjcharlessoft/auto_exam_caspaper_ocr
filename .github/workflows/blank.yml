@@ -178,7 +178,7 @@ jobs:
 
           echo "=====> copy to ${RELEASE_PACKAGE}"
 
-          sh ${WORKSPACE}/myutils/auto_exam/paper-ocr/scripts/publish_server.sh || CheckLastResult
+          sh ${WORKSPACE}/myutils/auto_exam/paper-ocr/scripts/publish_server.sh  ${JENKINS_ENV_PATH} || CheckLastResult
 
           # ssh xhpadmin@${RELEASE_PACKAGE} ' \
           #   mkdir -p /www/wwwroot/download.happygogo.site/autoexam/ocr/
