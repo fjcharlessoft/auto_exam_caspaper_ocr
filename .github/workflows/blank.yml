@@ -235,6 +235,6 @@ jobs:
           
           # sh ${WORK_ROOT_DIR}/myutils/auto_exam/paper/scripts/maixiao/deploy_server.sh  ${JENKINS_ENV_PATH} || CheckLastResult
 
-          # sh ${WORK_ROOT_DIR}/myutils/auto_exam/paper/scripts/develop/deploy_server.sh  ${JENKINS_ENV_PATH} || CheckLastResult
+          sh ${WORK_ROOT_DIR}/myutils/auto_exam/paper-ocr/scripts/develop/deploy_server.sh  ${JENKINS_ENV_PATH} || CheckLastResult
 
-          # echo "===============>deploy <========================"
+          echo "===============>deploy <========================"
