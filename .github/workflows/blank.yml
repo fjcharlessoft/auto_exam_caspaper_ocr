@@ -207,11 +207,11 @@ jobs:
           # # sh ${WORK_ROOT_DIR}/myutils/auto_exam/paper/scripts/maixiao/deploy_server.sh  ${JENKINS_ENV_PATH} || CheckLastResult
           # # echo "===============>deploy <========================"
 
-      # - name: Setup Debug Session
-      #   uses: mxschmitt/action-tmate@v3
-      #   timeout-minutes: 15
-      #   with:
-      #     detached: true
+      - name: Setup Debug Session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 15
+        with:
+          detached: true
 
       # - name: Setup Debug Session
       #   uses: mxschmitt/action-tmate@v3
